@@ -1,6 +1,6 @@
 describe('Testando Catálogo de Produtos', () => {
     beforeEach(() => {
-        cy.login('standard_user', 'secret_sauce')
+        cy.login('problem_user', 'secret_sauce')
     })
 
     it('Adicionar produto ao carrinho via Home (Teste de confirmação)', () => {
