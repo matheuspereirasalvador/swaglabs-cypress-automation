@@ -1,19 +1,40 @@
-# 🛒 SwagLabs Automation (Cypress)
+# 🛒 SauceDemo E2E Automation
 
-Automação E2E do e-commerce SwagLabs (SauceDemo) focada em cenários críticos e tratamento de falhas.
-Este projeto é a continuação técnica da [Suíte de Testes Manuais documentada no Qase](https://app.qase.io/public/report/8f0d7ecd0d518cc6c4a32d6b27411a26ab77e867#defects-tab).
+Projeto de automação de testes End-to-End (E2E) para o e-commerce Swag Labs (SauceDemo), desenvolvido como parte do meu portfólio de QA.
 
-## 🚀 Tecnologias
-- **Cypress** (Framework de Testes)
-- **JavaScript** (Linguagem)
-- **Node.js** (Ambiente)
+![Status do Projeto](https://img.shields.io/badge/status-concluído-brightgreen)
 
-## 📂 Estrutura do Projeto
-- `cypress/e2e`: Scripts de teste
-- `cypress/fixtures`: Massas de dados (usuários, produtos)
-- `cypress/support`: Comandos customizados (Login, etc)
+## 📸 Relatório de Execução
+![Relatório de Testes](relatorio-print.png)
 
-## 🏃‍♂️ Como rodar
-1. Clone o repositório
-2. Instale as dependências: `npm install`
-3. Rode o Cypress: `npx cypress open`
+## 🛠 Tecnologias Utilizadas
+* **Cypress:** Framework de automação e testes.
+* **JavaScript:** Linguagem de programação.
+* **Mochawesome:** Gerador de relatórios HTML com gráficos.
+* **Node.js:** Ambiente de execução.
+
+## 🧪 Cenários Cobertos
+1.  **Login:** Autenticação com usuários válidos e tratamento de bloqueios.
+2.  **Catálogo:** Adição/Remoção de itens ao carrinho e uso de filtros de ordenação.
+3.  **Carrinho:** Validação de persistência de itens e navegação.
+4.  **Checkout:** Fluxo completo de compra e validação de formulários obrigatórios.
+5.  **Tratamento de Erros:** Testes resilientes que validam mensagens de erro e comportamentos do `problem_user`.
+
+## ⚙️ Como rodar o projeto
+
+1.  Clone o repositório:
+    ```bash
+    git clone https://github.com/matheuspereirasalvador/swaglabs-cypress-automation.git
+    ```
+2.  Instale as dependências:
+    ```bash
+    npm install
+    ```
+3.  Rode os testes (modo headless com relatório):
+    ```bash
+    npx cypress run
+    ```
+4.  Abra o relatório gerado em `cypress/reports/html/index.html`.
+
+---
+Desenvolvido por **Matheus Pereira Salvador** 🚀
